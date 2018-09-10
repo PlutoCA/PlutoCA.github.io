@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .bd {
+            max-height: 0;
+            overflow: hidden;
+            transition: all 1s ease-out;
+        }
+
+        li:hover .bd {
+            max-height: 600px;
+            transition-timing-function: ease-in;
+        }
+
+        li:hover .hd {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>
+            <div class="hd"> 列表1 </div>
+            <div class="bd">
+                列表2内容<br>内容列表2内容<br>内容列表2内容<br>内容
+                列表2内容<br>内容列表2内容<br>内容列表2内容<br>内容
+                列表2内容<br>内容列表2内容<br>内容列表2内容<br>内容
+                列表2内容<br>内容列表2内容<br>内容列表2内容<br>内容
+                列表2内容<br>内容列表2内容<br>内容列表2内容<br>内容
+                列表2内容<br>内容列表2内容<br>内容列表2内容<br>内容
+                列表2内容<br>内容列表2内容<br>内容列表2内容<br>内容
+            </div>
+        </li>
+        <li>
+            <div class="hd"> 列表2 </div>
+            <div class="bd">列表2内容<br>内容列表2内容<br>内容列表2内容<br>内容</div>
+        </li>
+        <li>
+            <div class="hd"> 列表3</div>
+            <div class="bd">列表2内容<br>内容列表2内容<br>内容列表2内容<br>内容</div>
+        </li>
+    </ul>
+</body>
+
+</html>

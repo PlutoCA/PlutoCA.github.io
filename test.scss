@@ -1,0 +1,38 @@
+.valid {
+    border-color: #429032;
+    box-shadow: inset 5px 0 0 #429032;
+  }
+  
+  .invalid {
+    border-color: #D61D1D;
+    box-shadow: inset 5px 0 0 #D61D1D;
+  }
+  
+  .form-group {
+    width: 32rem;
+    padding: 1rem;
+    border: 1px solid transparent;
+    &:hover {
+      border-color: #eee;
+      transition: border .2s;
+    }
+    label {
+      display: block;
+      font-weight: normal;
+    }
+    input,
+    textarea {
+      display: block;
+      width: 100%;
+      line-height: 2rem;
+      padding: .5rem .5rem .5rem 1rem;
+      border: 1px solid #ccc;
+      outline: none;
+      &:valid {
+        @extend .valid;
+      }
+      &:invalid {
+        @extend .invalid;
+      } 
+    }
+  }
